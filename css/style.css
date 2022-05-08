@@ -20,7 +20,7 @@ body {
 	background: #fff no-repeat bottom right; /* image at the bottom right */
 	margin: 0;
 	margin-right: 80px; 
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	padding: 0;
 	}
 p { 
@@ -218,4 +218,16 @@ header {
 .responsive {
 	width: 100%;
 	height: auto;
-	  }
+	}
+
+footer {
+	font: 10px verdana, sans-serif;
+	padding: 10px; 
+	background: #005440;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	}

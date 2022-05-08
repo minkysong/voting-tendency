@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<div class="page-wrapper">
+<html>
+<head>
+	<title>Voting Trend</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="preamble" id="zen-preamble" role="article">
+        <h1>Analyzing Voting Trend in United States by Race</h1>
+
+        <h2>Introduction</h2>
+            It is a widely known fact that people who vote often are more likely to have high income and higher education
+            <a href="https://econofact.org/voting-and-income">[1]</a>.
+            We have also found out that young people are more likely to not vote compared to elders <a href="https://www.nytimes.com/2020/10/08/upshot/youth-voting-2020-election.html">[2]</a>.
+            However, there is no clear proposition on people's voting tendencies based on their race &#8212;
+            most of the research on voting tendency based on racial demographics only shows the percentage of the voting turnout out.
+            They do not study if the people of some specific ethnicities chose to vote or not
+            <a href="https://www.pewresearch.org/fact-tank/2020/10/26/what-the-2020-electorate-looks-like-by-party-race-and-ethnicity-age-education-and-religion/">[3]</a>.
+            Through analyzing the voting pattern of American population, we will examine if the people vote differently based on their race.
+            
+        <h2>About the data</h2>
+
+            The data for the research comes from a survey for <cite>FiveThirtyEight</cite> <a href="https://projects.fivethirtyeight.com/non-voters-poll-2020-election/">[4]</a>.
+            You can also get the survey data from their GitHub <a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">[5]</a>.
+            In the end, they surveyed 5,355 citizens of the United States. The sample includes 3,710 White people, 932 Black people, 813 Hispanic people, and 381 other/mixed people.
+            It also includes 1,394 people who makes more than $125k a year, 1,628 people who makes $75-125k a year, 1,396 people who makes $40-75k a year, and $1,418 people who makes less than $40k a year.
+            The following figure a breakdown on how does each race and income makes up the sample population.
+
+            <figure>
+                <img src="figures/00_mosaic.png" class="responsive">
+                <figcaption>Fig. 01: A mosaic plot showing visual representation of each race and income category.</figcaption>
+            </figure>
+
+            In the end, the sample was weighted to represent the population of the U.S. citizens accurately according to the United States Census Burea.
+            One thing to note is that the survey was taken from September 15th to September 25th of 2020, which is before the 2020 presidential elections.
+
+        <h2>The Voting Trend of the Voters based on Race</h2>
+			<p>
+				First, we will examine if there are any differences in the voting tendencies based on people's race within each income category. 
+				The visualization shows what percentage of the people always vote, sporadically vote, or never vote for each racial and income category.
+				These are the definition of each voting tendencies:
+				<ul>
+					<li>People who always votes are people who voted for all or all-but-one of the past elections they were eligible.</li>
+					<li>People who sporadically votes are people who voted for fewer than all-but-one yet more than once in the past elections they were eligible.</li>
+					<li>People who rarely or never votes are people who never voted or voted only once for the past elections they were eligible.</li>
+				</ul>
+				<figure>
+					<img src="figures/01_stackedBarPlot.png" class="responsive"> <!--class="center" style = "width: 1000px">-->
+					<figcaption>Fig. 02: The percentage of the population's voting tendency based on their race and income.</figcaption>
+				</figure>
+				Through this plot, we can see that the White voters and the Black voters have similar voting patterns across all income categories. 
+				On the other hand, Hispanic and others/mixed voters have more people who do not vote compared to White and Black constituencies. 
+				This pattern is more apparent for the income category of '$125k or more' and '$40-75k.' 
+				We can also observe that the number of people who always vote or sporadically votes decreases as the income category decreases too. 
+				The only exception to this is the others/mixed voters: 
+				they have more percentage of people who always or sporadically vote in the '$75-125k' income category than the '$125k or more' category.
+			</p>
+
+			<p>
+				One thing to note about the visualization is that, as according to the information on the main page of this website, 
+				the sample population consists much more White voters compared to any other race.
+				Therefore, it is much more rational to generalize the voting trend of the White voters compared to other ethnicities.
+			</p>
+
+        <h2>The Voting History of the Voters</h2>
+			<p>
+				Next, we will study the voting history of the surveyed population. 
+				The plot below shows what percentage of people voted or did not vote in the six past elections.
+				The trend of the percentage of people who voted for each income category are similar to that of Figure 02:
+				the people with high income have voted more during the past elections, while the people with low income have voted less.
+				The plot also looks like a wave which shows that more people tend to vote for the presidential election than the congressional elections. 
+				Thus, we can learn that the population perceives presidential elections more importantly than the congressional election. 
+				One event that does not follow this is the Hispanic constituency for the 2010 congressional elections: 
+				Hispanic voters with the income category of '$40-75k' and 'Less than $40k' voted more for the 2010 congressional election than the 2008 presidential elections.
+			</p>
+			
+			<figure>
+				<img src="figures/02_time.png" class="responsive">
+				<figcaption>Fig. 03: The percentage of the population's voting history based on their race and income.</figcaption>
+			</figure>
+			
+			<p>
+				On the other hand, the trend of the percentage of people who voted for each racial category resembles that of Figure 02.
+				Across all income categories, the Black constituencies have frequently voted the most out of all racial categories, 
+				which is followed by the White constituencies.
+				The Hispanic constituencies have voted more than the other/mixed constituency for the income of $120k or more,
+				while they have voted less for the $75-125k and $40-75k.
+				However, for the less than $40k income category, it is difficult to determine whether it is the Hispanics voter or the other/mixed voter who voted more, because, 
+				as described above, the Hispanic constituencies voted more for some of the elections while other/mixed constituencies voted more for the other elections.
+			</p>
+
+			<p>
+				One warning about this plot is that the data have some inconsistency between its voting history and voting tendency categorization.
+				The voting history was aggregated based on question 21 of the survey, which asked which of the recent elections did they voted in
+				<a href="https://github.com/fivethirtyeight/data/blob/master/non-voters/nonvoters_codebook.pdf">[5]</a>.
+				However, some people's voting history does not reflect the voting tendency they are categorized as.
+				Therefore, this voting tendency categorization may not be the most accurate representation of how the U.S. population votes.
+			</p>
+        
+        <h2>Will the People Vote in the Future Election?</h2>
+			<p>
+				To further the analyzation, we will study whether if there is any difference on how people plan to vote for the future election
+				depending on their race or income.
+				<!-- One thing different about this plot is that it is not expressed as a percentage.-->
+				Using this plot, we can see that when the income category decreases, there are more percentage of people who decides to not participate in the election.
+				This observation is in line with the foundings of figure 02 and figure 03.
+				However, with a few exceptions, the proportion of people who plans to vote are similar across all racial categories.
+				The few exceptions are the Hispanic constituency of the '$75-125k' income category and the other/mixed constituency for the '$40-75k' category.	
+			</p>
+		
+			<figure>
+				<img src="figures/futureVoting6.png" class="responsive">
+				<figcaption>Fig. 04: The percentage of the population's voting plan for the 2020 presidential electino based on their race and income category.</figcaption>
+			</figure>
+        
+        <h2>Conclusion</h2>
+			<p>
+				Through data visualization, the voting trend between various racial categories was examined.
+				Black constituency tends to have more proportion of people that choose to vote among all income categories, 
+				and White constituency is has the second to the largest percentage of people choosing to vote.
+				In general, Hispanic constituency has the third to the largest ratio of people choosing to vote, 
+				but this may change depending on which election is being discussed.
+				Lastly, other/mixed constituency has the smallest proportion of people choosing to vote.
+				Yet, when we asked the eligible voters if they plan to vote for the future election,
+				within each income category, similar percentage of people answered that they will across all races.
+			</p>
+			<p>
+				In the future, this research can be furthered improved by analyzing why the more votes of a specific race are choosing to not vote compared to other races.
+				There could be various factors preventing people from voting or making people choose not to vote.
+				For instance, it could be the lack of belief in the United States election system or the difficulty to actually make a ballot.
+				Using the question from the surveys conducted by <cite>FiveThirtyEight</cite>, where the dataset used for this analysis came from,
+				we can get a closer image of which component of the U.S election system and its nature contributed to the current circumstance.
+				<a href="https://github.com/fivethirtyeight/data/blob/master/non-voters/nonvoters_codebook.pdf">[6]</a>.
+			</p>
+        
+    </div>
+
+        
+    <p></p>
+
+    <footer>
+        <b>Minkyong Song<br>William & Mary</b>
+    </footer>
+
+    <!--
+    <aside class="sidebar" role="complementary">
+		<div class="wrapper">
+                <h3><b></b></h3>
+				<nav role="navigation">
+					<ul>
+					<li>
+						<a href="index.html">Main Page</a> 
+                    </li>					<li>
+						<a href="01_voting_trend.html">Voting Trend by Race</a>			
+					</li>					<li>
+						<a href="02_past_elections.html">Past Elections</a> 		
+					</li>					<li>
+						<a href="03_future_election.html">Future Election</a>					
+					</li>					<li>
+						<a href="04_conclusion.html">Conclusion</a>					
+					</li>
+                    </ul>
+                
+                <div class="sidebar-footer">
+                    <li><b>Minkyong Song<br>William & Mary</b><li>
+                </div>
+				</nav>
+		</div>
+
+    -->
+</body>
+</html>
