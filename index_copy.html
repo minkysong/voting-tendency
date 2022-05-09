@@ -18,7 +18,7 @@
 			<a href="https://www.nytimes.com/2020/10/08/upshot/youth-voting-2020-election.html">[2]</a>.
             However, there is no clear proposition on racial disparities in voting tendencies &#8212;
             most researches studying voting tendency by race only show the percentage of the voter turnout.
-            They do not study what voting tendency certian ethnic group shows
+            They do not study what voting tendency certain ethnic group shows
             <a href="https://www.pewresearch.org/fact-tank/2020/10/26/what-the-2020-electorate-looks-like-by-party-race-and-ethnicity-age-education-and-religion/">[3]</a>.
             Through analyzing the voting pattern of American population, we will examine whether the people of each race vote differently.
             
@@ -28,59 +28,61 @@
             The survey data can be found from their GitHub as well <a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">[5]</a>.
             The survey has asked 5,355 citizens of the United States in total. 
 			The sample includes 3,710 White people, 932 Black people, 813 Hispanic people, and 381 other/mixed people.
-            By income group, it consists 1,394 people who makes more than $125k a year, 1,628 people of $75-125k a year, 1,396 people of $40-75k a year, and $1,418 people of less than $40k a year.
-            The following figure shows the composition sample population by race and income group.
+            By income group, it consists 1,394 people who makes more than $125k a year, 1,628 people of $75-125k a year, 1,396 people of $40-75k a year, and 1,418 people of less than $40k a year.
+            The following figure shows the composition of the sample by race and income group.
 
             <figure>
-                <img src="figures/00_mosaic2.png" class="responsive">
-                <figcaption>Figure 01: A mosaic plot showing visual representation of each race and income category.</figcaption>
+                <img src="figures/00_mosaic.png" class="responsive">
+                <figcaption>Figure 1: A mosaic plot showing visual representation of each race and income group.</figcaption>
             </figure>
 
             This composition was weighted to represent the population of the U.S. citizens.
-            One thing to note is that the survey was taken from September 15th to September 25th of 2020, which is before the 2020 presidential elections.
+            One thing to notice is that the survey was taken from September 15th to September 25th of 2020, which is before the 2020 presidential election.
 
-        <h2>The Voting Tendency of the Voters based on Race</h2>
+        <h2>Voting Tendency of the Voters based on Race</h2>
 			<p>
-				First, we will examine if there are any significant differences in the voting tendencies by race within each income category. 
+				First, we will examine if there are any significant differences in the voting tendencies by race within each income group. 
 				The visualization shows what percentage of the people always vote, sporadically vote, or never vote for each racial and income classification.
-				Each voting tendencies are defined as the follows:
+				Each voting tendencies are defined as follows:
 				<ul>
 					<li>People who always votes are people who voted for all or all-but-one of the past elections they were eligible.</li>
 					<li>People who sporadically votes are people who voted for fewer than all-but-one yet more than once in the past elections they were eligible.</li>
 					<li>People who rarely or never votes are people who never voted or voted only once for the past elections they were eligible.</li>
 				</ul>
 				<figure>
-					<img src="figures/01_stackedBarPlot2.png" class="responsive"> <!--class="center" style = "width: 1000px">-->
-					<figcaption>Figure 02: Stacked bar plots representing the percentage of the population's voting tendency based on their race and income.</figcaption>
+					<img src="figures/01_stackedBarPlot.png" class="responsive"> <!--class="center" style = "width: 1000px">-->
+					<figcaption>Figure 2: A stacked bar plots representing the percentage of the population's voting tendency based on their race and income.
+						<br>The number above the stacked bar shows the number of sample in each group.
+					</figcaption>
 				</figure>
 				Through this figure, we can see that the White voters and the Black voters have similar voting patterns across various income. 
-				On the other hand, Hispanic and others/mixed voters votes less compared to White and Black constituencies. 
+				On the other hand, Hispanic and others/mixed voters are less likely to vote than White and Black constituencies. 
 				This pattern is more apparent for the income groups of '$125k or more' and '$40-75k.' 
-				We can also observe that the number of people who always vote or sporadically votes decreases as the income decreases. 
+				We can also observe that the number of people who always vote or sporadically votes decreases as income decreases. 
 				The only exception to this is the others/mixed voters: 
-				they have more percentage of people who always or sporadically vote in the '$75-125k' income category than the '$125k or more' category.
+				they have bigger share of people who always or sporadically vote in the '$75-125k' income group than the '$125k or more' group.
 			</p>
 
 			<p>
-				One thing to note about the visualization is that, White is the largest racial group of the United States constituencies.
+				One thing to pay attention about the visualization is that, White is the largest racial group of the United States constituencies.
 				Thus, it is much more rational to generalize the voting trend of the White voters compared to other ethnicities.
 			</p>
 
-        <h2>The Trend of Voting Tendency in Recent Elections</h2>
+        <h2>Trend of Voting Tendency in Recent Elections</h2>
 			<p>
-				Next, we will study the voting history of the surveyed population. 
-				The plot below shows what percentage of people voted or did not vote in the recent six elections.
-				The trend of the percentage of people who voted for each income category are similar to that of figure 2:
+				Next, we will study the voting trend of the surveyed population. 
+				The plot below shows what percentage of people voted <!--or did not vote--> in the recent six elections.
+				The trend of the percentage of people who voted for each income group are similar to that of figure 2:
 				the people with high income have voted more during the past elections, while the people with low income have voted less.
 				The plot also looks like a wave which shows that more people tend to vote for the presidential election than the congressional elections. 
 				Thus, we can learn that the population perceives presidential elections more importantly than the congressional election. 
-				One event that does not follow this is the Hispanic constituency for the 2010 congressional elections: 
+				One event that does not follow this tendency is the Hispanic constituency for the 2010 congressional elections: 
 				Hispanic voters with the income groups of '$40-75k' and 'Less than $40k' voted more for the 2010 congressional election than the 2008 presidential elections.
 			</p>
 			
 			<figure>
-				<img src="figures/02_time2.png" class="responsive">
-				<figcaption>Figure 03: The percentage of the population's voting history based on their race and income.</figcaption>
+				<img src="figures/02_time.png" class="responsive">
+				<figcaption>Figure 3: A line plot showing the percentage of the sample who voted for the six recent elections based on their race and income.</figcaption>
 			</figure>
 			
 			<p>
@@ -113,8 +115,8 @@
 			</p>
 		
 			<figure>
-				<img src="figures/futureVoting7.png" class="responsive">
-				<figcaption>Figure 04: The percentage of the population's voting plan for the 2020 presidential electino based on their race and income category.</figcaption>
+				<img src="figures/03_futureVoting.png" class="responsive">
+				<figcaption>Figure 4: The percentage of the population's voting plan for the 2020 presidential electino based on their race and income category.</figcaption>
 			</figure>
         
         <h2>Conclusion</h2>
@@ -147,14 +149,14 @@
         <b>Minkyong Song<br>William & Mary</b>
     </footer>
 
-    <!--
+	<!--
     <aside class="sidebar" role="complementary">
 		<div class="wrapper">
-                <h3><b></b></h3>
+                <h3><b>Navigate To:</b></h3>
 				<nav role="navigation">
 					<ul>
 					<li>
-						<a href="index.html">Main Page</a> 
+						<a href="index_copy.html">Main Page</a> 
                     </li>					<li>
 						<a href="01_voting_trend.html">Voting Trend by Race</a>			
 					</li>					<li>
@@ -171,7 +173,7 @@
                 </div>
 				</nav>
 		</div>
+	-->
 
-    -->
 </body>
 </html>
