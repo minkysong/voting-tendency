@@ -17,9 +17,9 @@ body {
 	font: 100% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #5a5a5a; 
-	background: #fff no-repeat bottom right; /* image at the bottom right */
+	background: #fff no-repeat bottom right;
 	margin: 0;
-	margin-right: 80px; 
+	/*margin-right: 0px;*/
 	margin-bottom: 70px;
 	padding: 0;
 	}
@@ -72,7 +72,7 @@ figcaption {
   }
 
 .page-wrapper { 
-	background: #fff no-repeat top left; /* image at the top left */
+	background: #fff no-repeat top left;
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
@@ -126,6 +126,7 @@ header {
 	clear: right; 
 	padding: 0px 10px 0 10px;
 	}
+	
 .supporting {
 	padding-left: 10px; 
 	margin-bottom: 40px;
@@ -141,12 +142,13 @@ header {
 
 .sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
-	background: #005440 /*transparent url(http://csszengarden.com/001/paper-bg.jpg)*/ top left repeat-y; /* background of the navigation tab*/
+	background: #005440 top left repeat-y;
 	padding: 10px; 
 	margin-top: 0px;
 	height: 100%;
 	color: white;
 	}
+
 /*.sidebar h3.select { 
 	margin: 10px 0 5px 0; 
 	width: 97px; 
@@ -185,7 +187,6 @@ header {
 .sidebar li {
 	line-height: 1.6em; 
 	border-bottom: 3px solid #ba9e66;
-	/*background: #ba9e66 /*transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; */
 	display: block; 
 	padding-top: 5px; 
 	margin-bottom: 5px;
@@ -230,8 +231,4 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	}
-
-footer a:link, a:visited{
-	color: #fff;
 	}
