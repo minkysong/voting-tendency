@@ -19,7 +19,7 @@ body {
 	color: #5a5a5a; 
 	background: #fff no-repeat bottom right;
 	margin: 0;
-	/*margin-right: 0px;*/
+	margin-right: 0px;
 	margin-bottom: 70px;
 	padding: 0;
 	}
@@ -73,7 +73,7 @@ figcaption {
 
 .page-wrapper { 
 	background: #fff no-repeat top left;
-	padding: 0 175px 0 110px;  
+	padding: 0 110px 0 110px;  
 	margin: 0; 
 	position: relative;
 	}
