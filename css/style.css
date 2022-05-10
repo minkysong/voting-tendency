@@ -231,3 +231,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	}
+
+footer a:link, a:visited{
+	color: #fff;
+	}
